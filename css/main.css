@@ -35,6 +35,11 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition: linear 300ms;
+}
+
+.fade-in {
+  opacity: 1;
 }
 
 .diamond {
@@ -45,6 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: linear 300ms;
+}
+
+.move {
+  right: 75px;
 }
 
 .panel {
@@ -73,6 +83,34 @@ div {
   background-color: orange;
   border-radius: 50%;
 }
+
+.bounce {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    right: 1em;
+  }
+  25% {
+    top: 40px;
+    right: 3em;
+  }
+  50% {
+    top: 15px;
+    right: 5em;
+  }
+  75% {
+    top: 40px;
+    right: 7em;
+  }
+  100% {
+    top: 15px;
+    right: 9em;
+  }
+}
+
 
 .list {
   bottom: 1em;
