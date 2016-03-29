@@ -68,12 +68,18 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: 200ms linear;
 }
 
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
 }
+
+.collapse {
+  max-height: 0%;
+}
+
 
 .circle {
   height: 100px;
@@ -110,7 +116,6 @@ div {
     right: 9em;
   }
 }
-
 
 .list {
   bottom: 1em;
